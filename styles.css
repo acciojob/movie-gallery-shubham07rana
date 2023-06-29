@@ -1,2 +1,30 @@
 
 /* Your CSS Code here. */
+  .container-fluid {
+      margin: 0 auto;
+      max-width: 1200px;
+      padding: 20px;
+    }
+    
+    .row::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    
+    .column {
+      float: left;
+      width: 25%; /* Adjust this value based on the desired number of images in a row */
+      padding: 5px;
+    }
+    
+    .column img {
+      width: 100%;
+      height: auto;
+    }
+    
+    @media screen and (max-width: 768px) {
+      .column {
+        width: 100%;
+      }
+    }
